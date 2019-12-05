@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<android.support.constraint.ConstraintLayout tools:context="com.andoid.tk.challenger.MainActivity" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintLeft_toLeftOf="parent" android:textSize="35sp" android:text="@string/random" android:fontFamily="@font/font1" android:layout_marginTop="70dp" android:id="@+id/head1"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintLeft_toLeftOf="parent" android:textSize="35sp" android:text="Challenger " android:fontFamily="@font/font1" android:layout_marginTop="130dp" android:id="@+id/head2"/>
+
+
+-<android.support.constraint.ConstraintLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="70dp" android:id="@+id/inputRange" app:layout_constraintTop_toBottomOf="@+id/head2" android:textAlignment="center">
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="20sp" android:text="Range : " android:id="@+id/range" app:layout_constraintRight_toLeftOf="@+id/startValue" android:layout_margin="5dp"/>
+
+<EditText android:layout_height="wrap_content" android:layout_width="70dp" android:text="0" android:id="@+id/startValue" android:textAlignment="center" app:layout_constraintRight_toLeftOf="@+id/to" android:layout_margin="5dp" app:layout_constraintBaseline_toBaselineOf="@+id/range"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintRight_toRightOf="parent" app:layout_constraintLeft_toLeftOf="parent" android:textSize="20sp" android:text="to" android:id="@+id/to" android:layout_marginLeft="50dp"/>
+
+<EditText android:layout_height="wrap_content" android:layout_width="70dp" android:text="100" android:id="@+id/stopValue" android:textAlignment="center" android:layout_margin="5dp" app:layout_constraintBaseline_toBaselineOf="@+id/to" app:layout_constraintLeft_toRightOf="@+id/to"/>
+
+</android.support.constraint.ConstraintLayout>
+
+<Button android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintRight_toRightOf="parent" app:layout_constraintLeft_toLeftOf="parent" android:text="Start" android:layout_marginTop="40dp" android:id="@+id/startBtn" app:layout_constraintTop_toBottomOf="@id/inputRange" android:onClick="start"/>
+
+</android.support.constraint.ConstraintLayout>
