@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<android.support.constraint.ConstraintLayout tools:context="com.andoid.tk.challenger.Main3Activity" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintLeft_toLeftOf="parent" android:textSize="35sp" android:text="Random " android:fontFamily="@font/font1" android:layout_marginTop="60dp" android:id="@+id/head1"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintTop_toTopOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintLeft_toLeftOf="parent" android:textSize="35sp" android:text="Challenger " android:fontFamily="@font/font1" android:layout_marginTop="120dp" android:id="@+id/head2"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="60sp" android:text="PLAYER 1" android:layout_marginTop="30dp" android:id="@+id/player" android:textAlignment="center" app:layout_constraintTop_toBottomOf="@+id/head2"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textSize="40sp" android:text="WIN !!" android:layout_marginTop="10dp" android:id="@+id/win" android:textAlignment="center" app:layout_constraintTop_toBottomOf="@+id/player"/>
+
+
+-<android.support.constraint.ConstraintLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="10dp" android:id="@+id/ansBlock" app:layout_constraintTop_toBottomOf="@+id/win">
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintRight_toRightOf="parent" app:layout_constraintLeft_toLeftOf="parent" android:textSize="20sp" android:text="The answer is " android:id="@+id/theAnswer" android:layout_marginRight="30dp"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="20sp" android:text="0" android:layout_marginTop="10dp" android:id="@+id/ans" app:layout_constraintLeft_toRightOf="@+id/theAnswer"/>
+
+</android.support.constraint.ConstraintLayout>
+
+
+-<android.support.constraint.ConstraintLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginTop="10dp" android:id="@+id/roundBlock" app:layout_constraintTop_toBottomOf="@+id/ansBlock">
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintRight_toRightOf="parent" app:layout_constraintLeft_toLeftOf="parent" android:textSize="20sp" android:text="Total round is " android:layout_marginTop="10dp" android:id="@+id/round" android:layout_marginRight="25dp"/>
+
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="20sp" android:text="0" android:id="@+id/roundValue" app:layout_constraintLeft_toRightOf="@+id/round"/>
+
+</android.support.constraint.ConstraintLayout>
+
+<Button android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintRight_toRightOf="parent" app:layout_constraintLeft_toLeftOf="parent" android:text="back" android:layout_marginTop="20dp" android:id="@+id/backBtn" app:layout_constraintTop_toBottomOf="@id/roundBlock" android:onClick="restart"/>
+
+</android.support.constraint.ConstraintLayout>
